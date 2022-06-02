@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous #02</title>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d95b64c38.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: thistle;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .card {
+        -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+      }
+      header {
+        width: 100%;
+        height: 120px;
+        background-color: slateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="my-3">
+      <header class="py-3">
+        <div class="text-white text-center">
+          <h1 style="text-align: center">ELSADORA'S RECOMENDATION MOVIES</h1>
+        </div>
+        <!-- <div
+          class="d-grid gap-2 d-md-flex justify-content-md-end me-lg-5 mb-lg-3"
+        ></div> -->
+      </header>
+
+      <!-- data film -->
+      <div class="container my-5">
+        <!-- create load -->
+        <div class="d-flex my-3">
+          <a
+            id="createFilm"
+            href="form.html"
+            class="btn btn-primary shadow fw-bold my-auto"
+            >Create <i class="bi bi-plus"></i
+          ></a>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-3 row-cols-xl-4 row-cols-xxl-4"
+          id="film"
+        ></div>
+        <!-- button load-->
+        <div class="d-grid gap-2 mt-4">
+          <button
+            class="btn btn-primary shadow fw-bold my-auto"
+            type="button"
+            id="load-film"
+          >
+            <i class="bi bi-arrow-down-circle mx-2 fw-bold fs-5"></i>Load More..
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Bootstrap/js/script.js"></script>
+  </body>
+</html>
