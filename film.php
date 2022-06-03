@@ -7,7 +7,7 @@ class Film
 
     function __construct()
     {
-        $this->db= mysqli_connect('localhost', '202410101118', 'secret', 'uas202410101118');
+        $this->db= mysqli_connect('localhost', '202410101017', 'secret', 'uas202410101017');
         // $this->db = mysqli_connect('localhost', 'root', '', 'sakila');
     }
 
