@@ -14,7 +14,7 @@ class Film
     public function read()
     {
         $page = isset($_GET['page']) ? $_GET['page'] : 0;
-        $query = "SELECT * FROM film ORDER BY title LIMIT {$page}, 12";
+        $query = "SELECT * FROM film_schema ORDER BY title LIMIT {$page}, 12";
         $sql = $this->db->query($query);
         $data = [];
 
