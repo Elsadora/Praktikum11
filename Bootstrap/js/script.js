@@ -16,19 +16,6 @@ $(document).ready(function () {
         });
         page += 12;
       });
-      $("form").submit(function (event) {
-        event.preventDefault();
-        var data = $(this).serialize();
-        console.log(data);
-        $.post("film.php?action=create", data, function (response) {})
-          .done(function () {
-            alert("Data film berhasil ditambahkan");
-            location.href = "index.html";
-          })
-          .fail(function () {
-            alert("error");
-          });
-      });
     })
     .trigger("click");
 });

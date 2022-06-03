@@ -203,18 +203,18 @@
           >
           <div class="col-sm-10">
             <div class="input-group mb-2">
-              <textarea
-                class="form-control"
-                aria-label="With textarea"
-                placeholder="Fill the Special Feature
-
-              Ex :
-              Trailers
-              Commentaries
-              Deleted Scenes
-              Behind the Scenes
-              Others"
-              ></textarea>
+              <select
+                multiple
+                class="form-select"
+                size="4"
+                id="special_features"
+                name="special_features[]"
+              >
+                <option>Trailers</option>
+                <option>Commentaries</option>
+                <option>Deleted Scenes</option>
+                <option>Behind the Scenes</option>
+              </select>
             </div>
           </div>
         </div>
@@ -257,9 +257,9 @@
           event.preventDefault();
           var data = $(this).serialize();
           console.log(data);
-          $.post("film.php?action=create", data, function (response) {})
+          $.post("film.php?action=create", data, function (respon) {})
             .done(function () {
-              alert("Data film berhasil ditambahkan");
+              alert("Data film berhasil ditambahkan pada favorite");
               location.href = "index.html";
             })
             .fail(function () {
