@@ -14,7 +14,7 @@ class Film
     public function read()
     {
         $page = isset($_GET['page']) ? $_GET['page'] : 0;
-        $query = "SELECT * FROM film_schema ORDER BY title LIMIT {$page}, 12";
+        $query = "SELECT * FROM film ORDER BY title LIMIT {$page}, 12";
         $sql = $this->db->query($query);
         $data = [];
 
@@ -42,11 +42,11 @@ class Film
                 $data['description'],
                 $data['release_year'],
                 $data['language_id'],
-                $data['original_language_id'], 
+                $data['ori_language'], 
                 $data['rental_duration'],
                 $data['rental_rate'],
                 $data['length'],
-                $data['replacement_cost'], 
+                $data['rep_cost'], 
                 $data['rating'],
                 $data['special_features'],
             );
@@ -62,7 +62,7 @@ class Film
 
     }
     public function language(){
-        $sql = "SELECT * FROM language";
+        $sql = "SELECT * FROM language ORDER BY name";
 
         $result = $this->db->query($sql);
         $data = [];
